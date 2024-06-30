@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .xxl-text {
+        font-size: 3rem; /* Increased size */
+        color: black;
+      }
+      body {
+        box-sizing: border-box;
+      }
+    
+
+      .btn-meeting {
+        background-color: black;
+        border: 1px solid gray;
+        color: white; /* Ensures text is visible on black background */
+      }
+
+      /* Contact button */
+      .btn-contact {
+        background-color: white;
+        border: 1px solid gray;
+        color: gray; /* Matches the border color */
+      }
+      /* Move to Top button */
+      .btn-move-top {
+        background: none; /* Removes the background */
+        border: none; /* Removes the border */
+        color: gray; /* Sets the text color to gray */
+        padding: 0; /* Removes any padding for a cleaner look */
+        cursor: pointer; /* Changes the cursor to a pointer on hover */
+        font-size: 16px; /* Adjusts font size, you can change it as needed */
+        text-decoration: none; /* Removes any default text decoration */
+      }
+
+      .btn-move-top:hover {
+        text-decoration: underline; /* Adds underline on hover for visual feedback */
+      }
+      .intro-section {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background-color: #f2f0f1;
+        padding: 20px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+      .content-container {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: "#F2F0F1";
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .five-lines {
+        line-height: 1.5;
+        font-size: 2.6rem;
+      }
+      .technolgy-section {
+        background-color: #242424;
+
+        margin-bottom: 0%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .gridText {
+        padding: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 2.5rem;
+      }
+      .border-light-gray {
+        border-color: red; /* Light gray border color */
+        max-width: 100%; /* Ensure images are not larger than their container */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      .row {
+        flex: 1;
+      }
+      .left,
+      .right {
+        height: 60vh; /* Set a fixed height for both columns */
+      }
+      .box {
+        background-color: #ddd;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .full-height {
+        height: 100%;
+        object-fit: cover;
+      }
+      .aboutus {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background-color: #984b4b;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+      }
+      .card {
+        min-height: 500px;
+        background-image: url("assets/mob-dev.png");
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #984b4b;
+      }
+      .card-text {
+        color: rgb(241, 234, 234);
+        font-size: 1rem;
+        margin-top: 300px;
+        font-weight: bold;
+      }
+      .card-title {
+        color: white;
+      }
+      .cardBtn {
+        color: white;
+        font-weight: bold;
+        border-width: 1px;
+        border-radius: 50px;
+        min-height: 20px;
+        min-width: 80px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+        transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+        <a class="navbar-brand" href="#"> <img src="assets/brandIcon.png" alt="logo"></a>
+        <span style="position: absolute; left: 80px; color: rgb(250, 245, 245); font-weight: bold; font-style: italic; font-size: 20px;">b  <span style="color: #242424; margin-left: 20px; font-style: normal;">.featured</span></span> 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center align-content-center justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <span>Get free quote</spa>
+      </nav>
+    </div>
+    <div class="gridText">
+     <p style="font-weight: bold; font-size: 60px;"> we create</p>
+     <p style="font-weight: bold; font-size: 60px; line-height: 0;"> <img src="assets/arrow.png" alt="logo" style="width: 20px; height: 20px;"> AWESOME</p>
+     <p style="font-weight: bold; font-size: 60px; margin: 0;line-height: 0.3">dESIGN</p>
+    </div>
+    <p class="gridText" style="font-size: 20px;">A Leading Digital Agency Focused On Branding, ui/ux Design, Mobile & Web Development</p>
+    <p class="gridText text-center  text-black  " style="font-size: 60px;">
+      We design, build and ship world-class digital products for forward-thinking brands.
+  </p>
+
+    <p class="gridText text-center text-md-left text-black">
+      B Featured is a leading digital product agency focused on branding,
+      UI/UX design, mobile, and web development.
+  </p>
+    <div class="container">
+     
+      <div class="card-group row">
+          <div class="card col-md-4 mb-3" style="background-color: #ffbcda  ; background-image: url('assets/mob-dev.png')" >
+              <div class="card-body">
+                  <h5 class="card-title">Digital Marketing</h5>
+                  <p class="card-text">
+                      Lorem Ipsum has been the industry's standard dummy text ever since
+                      the 1500s, when an unknown printer took a galley of type and
+                      scrambled it to make.
+                  </p>
+                  <hr class="gray" />
+                  <div class="d-flex flex-wrap justify-content-around">
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">social media</div>
+                      <div class="cardBtn">advertising</div>
+                      <div class="cardBtn">php</div>
+                  </div>
+              </div>
+          </div>
+          <div class="card col-md-4 mb-3" style="background-color: #aba3f9 ; background-image: url('assets/design-solutions.png');">
+              <div class="card-body">
+                  <h5 class="card-title">Digital Marketing</h5>
+                  <p class="card-text">
+                      Lorem Ipsum has been the industry's standard dummy text ever since
+                      the 1500s, when an unknown printer took a galley of type and
+                      scrambled it to make.
+                  </p>
+                  <hr class="gray" />
+                  <div class="d-flex flex-wrap justify-content-around">
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">seo</div>
+                  </div>
+              </div>
+          </div>
+          <div class="card col-md-4 mb-3" style="background-color: #d38cef ; background-image: url('assets/web-dev.png');">
+              <div class="card-body">
+                  <h5 class="card-title">Digital Marketing</h5>
+                  <p class="card-text">
+                      Lorem Ipsum has been the industry's standard dummy text ever since
+                      the 1500s, when an unknown printer took a galley of type and
+                      scrambled it to make.
+                  </p>
+                  <hr class="gray" />
+                  <div class="d-flex flex-wrap justify-content-around">
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">seo</div>
+                      <div class="cardBtn">seo</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="technolgy-section">
+      <h3
+        class="text-center text-white text-lg-left m-lg-5 mt-5 pt-5 text-gray"
+      >
+        Technology
+      </h3>
+      <p class="gridText text-left text-white">
+        We shape the products and services that improve the lives of millions
+        every single day. We do this by following a simple approach.
+      </p>
+      <div class="container">
+        <div class="row row-cols-7 w-100">
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/aws.png"
+              class="img-fluid rounded border-light-gray p-4 justify-content-center"
+              alt="Image 1"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center border-light"
+          >
+            <img
+              src="/assets/oracle.png"
+              class="img-fluid rounded border-light-gray p-2 justify-content-center"
+              alt="Image 2"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/uber.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 3"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/aws.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 1"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="/assets/oracle.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 2"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/uber.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 3"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/uber.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+        <div class="row row-cols-7 w-100">
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/aws.png"
+              class="img-fluid rounded border-light-gray p-4 justify-content-center"
+              alt="Image 1"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center border-light"
+          >
+            <img
+              src="/assets/oracle.png"
+              class="img-fluid rounded border-light-gray p-2 justify-content-center"
+              alt="Image 2"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/uber.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 3"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/aws.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 1"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="/assets/oracle.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 2"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/uber.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 3"
+            />
+          </div>
+          <div
+            class="col border border-gray justify-content-center align-content-center"
+          >
+            <img
+              src="./assets/uber.png"
+              class="img-fluid rounded border-light-gray p-2"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          src="./assets//img2.png"
+          class="img-fluid"
+          alt="Image 4"
+          style="margin-top: 40px"
+        />
+      </div>
+
+      <div style="font-style: italic">
+        <p class="text-white text-center" style="font-size: 140px">
+          -branding-seo-ssm-adv
+        </p>
+      </div>
+    </div>
+
+    <section class="intro-section">
+      <div class="content-container">
+        <h5>Let's Get to Work!</h5>
+        <p class="five-lines">
+          We’re your partner in addressing real human needs, collaborating
+          together to create something we can all be proud of.
+        </p>
+        <div class="buttons-container">
+          <div class="mt-5">
+            <button class="btn btn-meeting rounded-pill mr-2">
+              Book a meeting
+            </button>
+            <button class="btn btn-contact rounded-pill">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-white mt-5 p-4">
+      <div class="container">
+        <div class="row mt-3 mb-3">
+          <!-- Left Side -->
+          <div class="col-md-6 mb-5">
+            <h6 class="xxl-text">Let's make</h6>
+            <h6 class="xxl-text">something beautiful</h6>
+            <div class="mt-5">
+              <button class="btn btn-meeting rounded-pill mr-2">
+                Book a meeting
+              </button>
+              <button class="btn btn-contact rounded-pill">Contact us</button>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-5">
+                <h5 style="color: black">Contact Us</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >info@bfeatured.com.au</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >+1(234)564-890</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >5 Royal Ln, Melobourne</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >Victoria, Australia</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 style="color: black">Follow Us</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >dribble</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray">clutch</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5 style="color: black">Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray" style="color: gray"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bg-white pt-5 h-100">
+      <hr class="mb-5 gray" />
+      <div class="container p-3 mb-5">
+        <div class="row">
+          <div class="col-md-6 text-left">
+            <p class="mb-0 text-gray">
+              © bfeatured web Agency - 2024 All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn-move-top">Move to Top</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document
+        .querySelector(".move-to-top")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+  </body>
+</html>
